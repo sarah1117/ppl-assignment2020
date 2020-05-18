@@ -1,4 +1,4 @@
-This is a prolog program for airline reseravation system. (Assignment 8)
+/*This is a prolog program for airline reseravation system. (Assignment 8)*/
 :- initialization(main).
 main :- write('                      *******Airline Reservation System*******').
 
