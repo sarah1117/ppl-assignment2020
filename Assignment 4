@@ -1,0 +1,66 @@
+class shape(object):
+    def __init__(self,x,y):
+        self.height=int(x)
+        self.breadth=int(y)
+
+class Square(shape):
+    def __init__(self,x,y):
+        shape.__init__(self,x,y)
+    def calc(self):
+        print("Area is", shape.height * shape.height)
+
+class Rectangle(shape):
+    def __init__(self,x,y):
+        shape.__init__(self,x,y)
+    def calc(self):
+        print("Area is", self.height * self.breadth)
+
+class animal(object):
+    def __init__(self,x,y):
+        self.name=x
+        self.sound=y 
+      
+class cat(animal):
+    def __init__(self,x,y):
+        animal.__init__(self,x,y)
+  
+    def info(self):
+      print ("The cat named",self.name,"makes",self.sound,"sound")
+
+class dog(animal):
+    def __init__(self,x,y):
+        animal.__init__(self,x,y)
+
+    def info(self):
+      print ("The dog named",self.name,"makes",self.sound,"sound")
+
+class horse(animal):
+    def __init__(self,x,y):
+        animal.__init__(self,x,y)
+
+    def info(self):
+      print ("The horse named",self.name,"makes",self.sound,"sound")
+
+
+class pigeon(animal):
+    def __init__(self,x,y):
+        animal.__init__(self,x,y)
+
+    def info(self):
+      print ("The pigeon named",self.name,"makes",self.sound,"sound")
+
+class lion(animal):
+    def __init__(self,x,y):
+        animal.__init__(self,x,y)
+    def info(self):
+      print ("The lion named",self.name,"makes",self.sound,"sound")
+
+
+x=input("Enter height")
+y=input("Enter breadth")
+s1=Rectangle(x,y)
+s1.calc()
+x=input("Enter name of lion")
+y=input("Enter sound it makes")
+s2=lion(x,y)
+s2.info()
