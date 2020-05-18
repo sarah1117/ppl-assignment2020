@@ -1,0 +1,5 @@
+(defun factorial(num)
+        (cond((zerop num)1)
+                (t(*num(factorial(-num1))))
+        )
+)
